@@ -33,13 +33,13 @@ return [
 
     'connections' => [
 
-        'sqlite_testing' => [
+        'sqlite-database' => [
             'driver' => 'sqlite',
             'database' => database_path('database.sqlite'),
             'prefix' => '',
         ],
 
-        'mysql' => [sqlite_testing
+        'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
